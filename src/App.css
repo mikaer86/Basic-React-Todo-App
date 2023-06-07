@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Chorasmian&display=swap');
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+  --background: rgba(45, 68, 85, 0.616);
+  --todoElementColor: rgba(4, 37, 49, 0.855);
+  --fontSize: 0.8rem;
+  --labelFonts: 'Noto Sans Chorasmian', sans-serif;
+  
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.mainForm {
+
+  display: flex;
+  width: 33.33%;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 4, 0, 0.723);
+}
+
+.form-row {
+
+  display: flex;
+  width: 100%;
+  justify-content: column;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.taskInput {
+
+  width: 80%;
+  padding: 0.3rem;
+  border-radius: 3px;
+  border: 1.5px solid rgba(0, 0, 0, 0.809);
+
+}
+
+label {
+font-family:  var(--labelFonts);
+font-size: var(--fontSize);
+font-weight: 600;
+padding: 0.5rem;
+color: rgba(227, 226, 226, 0.809);
+}
+
+.list {
+
+  width: 33.33%;
+  padding: 0.983rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style:  none;
+  color: rgba(227, 226, 226, 0.809);;
+  font-family: 'Noto Sans Chorasmian', sans-serif;
+  background-color: var(--todoElementColor);
+}
+
+.btn {
+
+  width: 6.333rem;
+  border: none;
+  padding: 0.433rem;
+  color: white;
+  font-family:  var( --labelFonts);
+  font-weight: 900;
+  font-size: var(--fontSize);
+  background-color: rgba(0, 0, 0, 0.756);
+  box-shadow: 2px 3px rgb(89, 89, 93);
+}
+
+.btn:focus {
+
+  background-color: rgba(5, 5, 5, 0.58);
+  color: rgb(213, 213, 213);
+  box-shadow: none;
+  transition: ease-in 0.955s;
+}
+
+  
+
+
+
+
+
