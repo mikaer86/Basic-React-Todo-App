@@ -1,8 +1,9 @@
 const TodoTask = ({ completed, id, title, toggleTodo, deleteTodo }) => {
   return (
-    <li>
-      <label>
+    <li className='taskItem'>
+      <label className='taskLabel'>
         <input
+          className='checkTask'
           id={title}
           name='title'
           type='checkbox'

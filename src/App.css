@@ -8,6 +8,7 @@
   --background: rgba(45, 68, 85, 0.616);
   --todoElementColor: rgba(4, 37, 49, 0.855);
   --fontSize: 0.8rem;
+  --fontSizeTitle: 1.3rem;
   --labelFonts: 'Noto Sans Chorasmian', sans-serif;
   
 }
@@ -42,6 +43,13 @@
   padding: 1.6rem;
 }
 
+.headTitle {
+  font-family: var(--labelFonts);
+  font-size:var(--fontSizeTitle);
+  color:rgb(214, 212, 212);
+  font-weight: 600;
+}
+
 .taskInput {
 
   width: 80%;
@@ -65,11 +73,28 @@ color: rgba(227, 226, 226, 0.809);
   padding: 0.983rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   list-style:  none;
   color: rgba(227, 226, 226, 0.809);;
   font-family: 'Noto Sans Chorasmian', sans-serif;
   background-color: var(--todoElementColor);
+}
+
+.taskItem {
+
+  width: 100%;
+  display: flex;
+  padding: 1.1rem;
+  justify-content: space-between;
+}
+
+.taskLabel {
+
+  font-family: var(--labelFonts);
+  font-size: var(--fontSizeTitle);
+  font-weight: 600;
+  color: whitesmoke;
 }
 
 .btn {
@@ -90,7 +115,8 @@ color: rgba(227, 226, 226, 0.809);
   background-color: rgba(5, 5, 5, 0.58);
   color: rgb(213, 213, 213);
   box-shadow: none;
-  transition: ease-in 0.955s;
+  transition: ease-in-out 0.955s;
+
 }
 
   
