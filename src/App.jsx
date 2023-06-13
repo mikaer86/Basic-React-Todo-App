@@ -2,6 +2,8 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import TodoPrompt from './components/TodoPrompt';
 import TodoList from './components/TodoList';
+import DarkThemeBtn from './components/DarkThemeBtn';
+
 const App = () => {
   const [todos, setTodos] = useState(() => {
     const localValue = localStorage.getItem('item');
@@ -39,8 +41,15 @@ const App = () => {
     });
   };
 
+  const [clicked, setClicked] = useState(false);
+
+  const handleIconToggle = (e) => {
+    setClicked(!clicked);
+  };
+
   return (
-    <div className='App'>
+    <div className={!clicked ? 'App_active' : 'App'}>
+      <DarkThemeBtn handleIconToggle={handleIconToggle} />
       <TodoPrompt onSubmit={addTodo} />
       <h1 className='headTitle'>Goals</h1>
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
