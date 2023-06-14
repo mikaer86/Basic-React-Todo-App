@@ -5,8 +5,10 @@
     margin: 0;
     box-sizing: border-box;
 
-  --background: rgba(251, 253, 255, 0.813);
-  --todoElementColor: rgba(4, 37, 49, 0.855);
+  --background: #FBFDFF;
+  --todoElementColor: #034854;
+  --fontColorLight:  rgba(255, 255, 255, 0.916);
+  --fontColorDark: rgb(8, 8, 8);
   --fontSizeText: 0.8rem;
   --fontSizeTitle: 1.3rem;
   --labelFonts: 'Noto Sans Chorasmian', sans-serif;
@@ -32,7 +34,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(34, 33, 33, 0.904);
+  background-color: rgba(33, 31, 31, 0.855);
   border: 1.5px solid rgb(191, 191, 191);
   transition: ease-in 1.4s;
 
@@ -47,7 +49,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(0, 4, 0, 0.723);
+  background-color: var(--todoElementColor);
 }
 
 .form-row {
@@ -62,7 +64,7 @@
 .headTitle {
   font-family: var(--labelFonts);
   font-size:var(--fontSizeTitle);
-  color:rgb(214, 212, 212);
+  color: var(--fontColorLight);
   font-weight: 600;
 }
 
@@ -85,7 +87,7 @@
   justify-content: space-evenly;
   align-items: center;
   list-style:  none;
-  color: rgba(227, 226, 226, 0.809);;
+  color: var(--fontColorLight);
   font-family: 'Noto Sans Chorasmian', sans-serif;
   background-color: var(--todoElementColor);
   gap: 1rem;
@@ -103,7 +105,7 @@
 .newItem {
 
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.916);
+  color: var(--fontColorLight);
 }
 
 .taskLabel {
@@ -121,7 +123,7 @@
   width: 6.333rem;
   border: none;
   padding: 0.433rem;
-  color: white;
+  color: var(--fontColor);
   font-family:  var( --labelFonts);
   font-weight: 900;
   font-size: var(--fontSize);
@@ -132,7 +134,7 @@
 .btn:focus {
 
   background-color: rgba(5, 5, 5, 0.58);
-  color: rgb(213, 213, 213);
+  color: var(--fontColor);
   box-shadow: none;
   transition: ease-in-out 0.955s;
 
@@ -147,13 +149,19 @@
 
 }
 
-.checkTask {
 
-  padding: 2.8rem;
-  border: none;
-  background-color: blue;
-  
 
+.headTitle_dark {
+
+  color: var(--fontColor);
+  padding: 0.8rem;
+  gap: 1rem;
+}
+
+.headTitle_light {
+
+  color: var(--fontColor);
+  gap: 1rem;
 }
 
 .themeSetting {
@@ -164,7 +172,7 @@
   left: 88%;
   padding: 3rem;
   border: none;
-  color: white;
+  color: var(--fontColor);
   padding: 0.8rem;
   font-weight: 700;
   background-color: rgb(33, 33, 33);

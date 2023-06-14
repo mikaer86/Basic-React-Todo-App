@@ -51,7 +51,13 @@ const App = () => {
     <div className={`App ${!clicked ? 'App_active' : 'App'}`}>
       <DarkThemeBtn handleIconToggle={handleIconToggle} />
       <TodoPrompt onSubmit={addTodo} />
-      <h1 className='headTitle'>Goals</h1>
+      <h1
+        className={`headTitle_light ${
+          !clicked ? 'headTitle_dark' : 'headTitle_light'
+        }`}
+      >
+        Goals
+      </h1>
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
     </div>
   );
