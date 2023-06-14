@@ -15,7 +15,9 @@ const TodoPrompt = ({ onSubmit }) => {
   return (
     <form onSubmit={handleSubmit} className='mainForm'>
       <div className='form-row'>
-        <label htmlFor='item'>New Item</label>
+        <label className='newItem' htmlFor='item'>
+          New Item
+        </label>
         <input
           className='taskInput'
           value={newItem}
