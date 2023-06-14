@@ -48,7 +48,7 @@ const App = () => {
   };
 
   return (
-    <div className={!clicked ? 'App_active' : 'App'}>
+    <div className={`App ${!clicked ? 'App_active' : 'App'}`}>
       <DarkThemeBtn handleIconToggle={handleIconToggle} />
       <TodoPrompt onSubmit={addTodo} />
       <h1 className='headTitle'>Goals</h1>

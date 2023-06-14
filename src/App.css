@@ -137,8 +137,10 @@ color: rgba(227, 226, 226, 0.809);
 
 .themeSetting {
 
-  display: flex;
-  z-index: 100;
+  display: block;
+  position: absolute;
+  top: 3%;
+  left: 88%;
   padding: 3rem;
   border: none;
   color: white;
